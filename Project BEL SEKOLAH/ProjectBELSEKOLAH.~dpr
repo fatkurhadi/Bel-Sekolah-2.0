@@ -1,0 +1,21 @@
+program ProjectBELSEKOLAH;
+
+uses
+  Forms,
+  UnitBELSEKOLAH in 'UnitBELSEKOLAH.pas' {Form_BEL_SEKOLAH},
+  UnitSENIN in 'UnitSENIN.pas' {FormSENIN},
+  UnitSELASA in 'UnitSELASA.pas' {FormSELASA},
+  UnitRABU in 'UnitRABU.pas' {FormRABU},
+  UnitKAMIS in 'UnitKAMIS.pas' {FormKAMIS},
+  UnitJUMAT in 'UnitJUMAT.pas' {FormJUMAT},
+  UnitSABTU in 'UnitSABTU.pas' {FormSABTU},
+  UDM in 'UDM.pas' {DM: TDataModule};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TForm_BEL_SEKOLAH, Form_BEL_SEKOLAH);
+  Application.CreateForm(TDM, DM);
+  Application.Run;
+end.
